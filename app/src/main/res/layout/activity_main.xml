@@ -22,17 +22,18 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:title="Payment Method"
-        app:titleMarginStart="50dp"
+        app:titleMarginStart="60dp"
         app:titleTextColor="@color/white" />
 
     <ImageButton
         android:id="@+id/ib_back"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/holo_red_dark"
         android:clickable="true"
+        android:contentDescription="Tombol kembali"
         android:src="@drawable/back_button"
         app:tint="@color/white" />
 
@@ -68,7 +69,6 @@
         android:layout_height="49dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="225dp"
-        android:contentDescription="Menambahkan nomer tlp"
         android:hint="Phone Number"
         android:inputType="number" />
 
