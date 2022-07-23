@@ -9,8 +9,8 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/idViewPager"
-        android:layout_width="406dp"
-        android:layout_height="598dp"
+        android:layout_width="398dp"
+        android:layout_height="555dp"
         android:layout_centerInParent="true"
         android:scrollbarSize="200dp" />
 
@@ -18,7 +18,7 @@
         android:id="@+id/materialToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_light"
+        android:background="@android:color/holo_red_dark"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:title="Payment Method"
@@ -31,7 +31,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="15dp"
-        android:background="@android:color/holo_red_light"
+        android:background="@android:color/holo_red_dark"
         android:clickable="true"
         android:src="@drawable/back_button"
         app:tint="@color/white" />
@@ -43,7 +43,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="80dp"
         android:text="ADD PAYMENT"
-        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold" />
 
@@ -70,8 +69,31 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="225dp"
         android:contentDescription="Menambahkan nomer tlp"
-        android:hint="Phone Number" />
+        android:hint="Phone Number"
+        android:inputType="number" />
 
+    <TextView
+        android:id="@+id/tv_paySelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="290dp"
+        android:text="Select Payment"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="PAY"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
